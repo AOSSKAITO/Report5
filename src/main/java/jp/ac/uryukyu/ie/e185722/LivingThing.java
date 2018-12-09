@@ -1,12 +1,26 @@
 package jp.ac.uryukyu.ie.e185722;
 
 public class LivingThing {
+    /**
+     * 敵クラス。
+     *  String name; //敵の名前
+     *  int hitPoint; //敵のHP
+     *  int attack; //敵の攻撃力
+     *  boolean dead; //敵の生死状態。
+     */
     private String name;
     private int hitPoint;
     private int attack;
     private boolean dead;
 
     public LivingThing (String name, int maximumHP, int attack) {
+        /**
+         * コンストラクタ。名前、最大HP、攻撃力を指定する。
+         *
+         * @param name      モンスター名
+         * @param maximumHP モンスターのHP
+         * @param attack    モンスターの攻撃力
+         */
         this.name = name;
         hitPoint = maximumHP;
         this.attack = attack;
